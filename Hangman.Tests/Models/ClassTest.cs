@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using Hangman.Models;
 
-namespace ProjectName.Tests
+namespace Hangman.Tests
 {
     [TestClass]
     public class ClassNameTest
