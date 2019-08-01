@@ -11,7 +11,16 @@ DETAILED DESCRIPTION
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **BEHAVIOR** | INPUT | OUTPUT |
+| **Computer chooses a random word from a list** | Start new game | Computer: "Make a guess!" _ _ _ _ _ _ _ _ (6 moves left)(word: Bagheera) |
+| **Recognizes a wrong guess** | F | Wrong guess. _ _ _ _ _ _ _ _ |
+| **Keeps track of wrong guesses** | F | Wrong guess. _ _ _ _ _ _ _ _ (5 moves left) Guesses Made: F |
+| **Does not accept duplicate guesses** | F | You already guessed this letter. _ _ _ _ _ _ _ _ (5 moves left) Guesses Made: F |
+| **Keeps track of number of wrong guesses** | F | Wrong guess. _ _ _ _ _ _ _ _ (5 moves left)|
+| **Recognizes a correct guess** | A | Correct guess. _ _ _ _ _ _ _ _ |
+| **Fills in guessed letter** | A | Correct guess. _ A _ _ _ _ _ A |
+| **Determines loss** | 6 incorrect guesses | Game over! B A G H E E R A |
+| **Determines win when all letters are filled in** | All letters filled in | You win! B A G H E E R A |
+| **Determines win when correct word is manually entered** | I Know It!: bagheera | You win! B A G H E E R A |
 
 ## Setup/Installation Requirements
 
