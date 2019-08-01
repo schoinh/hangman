@@ -11,10 +11,10 @@ DETAILED DESCRIPTION
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Computer chooses a random word from a list** | Start new game | Computer: "Make a guess!" _ _ _ _ _ _ _ _ (6 moves left)(word: Bagheera) |
+| **Computer chooses a random word from a list** | Start new game | Computer: "Make a guess!"<br/>_ _ _ _ _ _ _ _<br/>(6 moves left)<br/>(word: Bagheera) |
 | **Recognizes a wrong guess** | F | Wrong guess. _ _ _ _ _ _ _ _ |
-| **Keeps track of wrong guesses** | F | Wrong guess. _ _ _ _ _ _ _ _ (5 moves left) Guesses Made: F |
-| **Does not accept duplicate guesses** | F | You already guessed this letter. _ _ _ _ _ _ _ _ (5 moves left) Guesses Made: F |
+| **Keeps track of wrong guesses** | F | Wrong guess. _ _ _ _ _ _ _ _<br/>(5 moves left)<br/>Guesses Made: F |
+| **Does not accept duplicate guesses** | F | You already guessed this letter. _ _ _ _ _ _ _ _<br/>(5 moves left)<br/>Guesses Made: F |
 | **Keeps track of number of wrong guesses** | F | Wrong guess. _ _ _ _ _ _ _ _ (5 moves left)|
 | **Recognizes a correct guess** | A | Correct guess. _ _ _ _ _ _ _ _ |
 | **Fills in guessed letter** | A | Correct guess. _ A _ _ _ _ _ A |
